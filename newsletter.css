@@ -1,0 +1,85 @@
+:root {
+    --center: center;
+    --white : white;
+    --size : 18px;
+}
+.container_grid {
+    display: grid;
+    height: 100%;
+    grid-gap: 3px;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 80px 60px auto 40px 40px auto;
+     grid-template-areas: 
+        "l h h h h h h h h"
+        "sh sh sh sh sh sh sh sh sh"
+        " c c c c c c c c p"
+        "sh1 sh1 sh1 sh2 sh2 sh2 sh3 sh3 sh3"
+        "p1 p1 p1 p2 p2 p2 p3 p3 p3"
+        "sc sc sc sc1 sc1 sc1 sc2 sc2 sc2";
+   color: var(--white);
+}
+.header {
+    grid-area: h;
+    background-color: #CE9E5E;
+    text-align: var(--center);
+    size: 28px;
+}
+.logo {
+    background-color: #CE9E5E;
+    grid-area: l;
+}
+
+.storyheader {
+    grid-area: sh;
+    text-align: var(--center);
+}
+
+.content {
+   grid-area: c;  
+   text-align: var(--center); 
+}
+.picture {
+    grid-area: p;
+    --center: left;
+    text-align: var(--center);
+}
+.storyheader1 {
+    grid-area: sh1;
+    text-align: var(--center);
+    size: var(--size);
+}
+.picture1 {
+    grid-area: p1;
+    text-align: var(--center);
+}
+.storyheader2 {
+    grid-area: sh2;
+    text-align: var(--center);
+    size: var(--size);
+}
+.picture2 {
+    grid-area: p2;
+    text-align: var(--center);
+}
+.storyheader3 {
+    grid-area: sh3;
+    text-align: var(--center);
+    size: var(--size);
+}
+.picture3 {
+    grid-area: p3;
+    text-align: var(--center);
+}
+.storycontent {
+   grid-area: sc;  
+   text-align: var(--center);
+    
+}
+.storycontent1 {
+   grid-area: sc1;  
+   text-align: var(--center);
+}
+.storycontent2 {
+   grid-area: sc2;  
+   text-align: var(--center); 
+}

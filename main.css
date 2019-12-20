@@ -1,0 +1,28 @@
+body {
+      background: #691F02;
+    }
+h1 {
+       color: white;
+      font-family: 'Bondoni MT' sans-serif;
+      text-align: center;
+    }
+     h2 {
+       color: white;
+      font-family: 'Bondoni MT' sans-serif;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: #484444;
+    }
+   form {
+      display: flex;
+      display: -webkit-flex;
+      align-content: center;
+      flex-direction: column;
+    }
+footer {
+       color: white;
+      font-family: 'Bondoni MT' sans-serif;
+      text-align: center;
+    }

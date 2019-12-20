@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="flex.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#tabs").tabs();
+    });
+  </script>
+  <style>
+    /*------------------------------------ 
+     this shows the 3 ways you can justifiy content in a flex container
+      flexbox container
+ 	1. flex-start - Default value. Items are positioned at the beginning of the container
+	2. flex-end - Items are positioned at the end of the container
+	3. center - Items are positioned at the center of the container
+	4. space-between - Items are positioned with space between the lines
+	5.  space-around - Items are positioned with space before, between, and after the lines
+   /*------------------------------------*/
+    .flex-container-picture {
+      background-color: #691F02;
+
+ height: 600px;   }
+    .flex-item-picture {
+      color: white;
+      font-family: 'Bondoni MT'sans-serif;
+    }
+
+    @media all and (max-width: 900px) {
+      .flex-container {
+        width: 100%;
+        height: 85px;
+        align-content: space-between;
+      }
+      .flex-container-picture {
+        width: 100%;
+        align-items: center;
+        flex-direction: row;
+      }
+      .flex-item {
+        width: 50px;
+        height: 100px;
+      }
+      .flex-item-picture {
+        padding: 10px;
+        width: 100%;
+        height: 400px;
+      }
+
+    }
+      @media all and (max-width: 500px) {
+        .flex-container {
+          width: 100%;
+          height: 85px;
+          align-content: space-between;
+          flex-direction: column;
+        }
+        .flex-container-picture {
+          width: 410px;
+          height: 600px;
+          flex-direction: row;
+          padding: 10px;
+        }
+        .flex-item {
+          width: 50px;
+          height: 100px;
+        }
+        .flex-item-picture {
+          padding: 10px;
+          width: 100%;
+          height: 400px;
+        }
+
+      }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="flex-item"><img src="./raising chicken.png" width="110" height="80"
+        alt="logo of Community Chicken Awareness."></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/index.html">Home</a></div>
+    <div class="flex-item"><a href="#">Products</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/events.html">Events</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/history.html">History</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/tutorial.html">Tutorials</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/awards.html">Awards</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/join.html">Join</a></div>
+  </div><br>
+  <div class="flex-container-word">
+    <h1>Community Chicken Awareness</h1><br>
+  </div><br>
+  <h2>Products</h2>
+  <br>
+  <div id="tabs">
+    <ul>
+      <li><a href="#tabs-1">Shirt</a></li>
+      <li><a href="#tabs-2">Backpack</a></li>
+      <li><a href="#tabs-3">Traveling Mug</a></li>
+    </ul>
+    <div class="flex-container-picture">
+      <div id="tabs-1" class="flex-item-picture"><img src="./chicken_shirt.png" width="300" height="400"
+          alt="young lady holding chicken"><br>$14.99</div>
+      <div id="tabs-2" class="flex-item-picture"><img src="./chicken_backpack.png" width="300" height="400"
+          alt="baby chicks"><br>$24.99</div>
+      <div id="tabs-3" class="flex-item-picture"><img src="./chicken_travel_mug.png" width="300" height="400"
+          alt="couple holding chicken"><br>$3.99</div>
+    </div>
+  </div>
+  <br>
+  <div class="flex-container-footer">
+    <footer>Contact us at by email: 1484203@park.edu<br>or call at: (913)255-5555</footer>
+  </div>
+</body>
+
+</html>

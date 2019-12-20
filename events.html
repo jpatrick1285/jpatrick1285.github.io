@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="flex.css">
+  <link rel="stylesheet" href="events.css">
+  <script src="events.js"></script>
+  <style>
+    /*------------------------------------ 
+     this shows the 3 ways you can justifiy content in a flex container
+      flexbox container
+ 	1. flex-start - Default value. Items are positioned at the beginning of the container
+	2. flex-end - Items are positioned at the end of the container
+	3. center - Items are positioned at the center of the container
+	4. space-between - Items are positioned with space between the lines
+	5.  space-around - Items are positioned with space before, between, and after the lines
+   /*------------------------------------*/
+    @media all and (max-width: 800px) {
+      .flex-container {
+        width: 100%;
+        height: 50px;
+        align-content: space-between;
+      }
+      .flex-item{
+        width: 50px;
+        height: 100px;
+      }
+    
+      }
+    @media all and (max-width: 500px) {
+        .flex-container {
+        width: 100%;
+        height: 85px;
+        align-content: space-between;
+        flex-direction: column;
+      }
+      .flex-item{
+        width: 50px;
+        height: 100px;
+      }
+    .flex-calendar {
+      display: flex;
+      display: -webkit-flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="flex-item"><img src="./raising chicken.png" width="110" height="80"
+        alt="logo of tasty steak steakhouse."></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/index.html">Home</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/products.html">Products</a></div>
+    <div class="flex-item"><a href="#">Events</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/history.html">History</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/tutorial.html">Tutorials</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/awards.html">Awards</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/join.html">Join</a></div>
+  </div><br>
+  <div class="flex-container-word">
+    <h1>Community Chicken Awareness</h1><br>
+    </div><br>
+
+<div class="flex-calendar">
+  <iframe
+    src="https://calendar.google.com/calendar/embed?src=park.edu_d7j6bahfvubbn7nq0205jdorbc%40group.calendar.google.com&ctz=America%2FChicago"
+    style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
+  </iframe>
+</div><br>
+<h2>Community Chicken Awareness Events</h2>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for events.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">Feeding Day - Come out and feed the schools chickens!<br>from 2-3 p.m. 5/10/19</a></li>
+  <li><a href="#">Petting Day - Come out and pet our amazing chickens!<br>from 1-3 p.m. 4/27/19 </a></li>
+
+  <li><a href="#">Get to Know Chickens Day!<br>from 2-4 p.m. 4/25/19 </a></li>
+  <li><a href="#">Find Out Everything You Need to Take Care of Chickens Day!<br>from 12-3 p.m. 4/29/19</a></li>
+
+  <li><a href="#">Chicken Eating Day! Bring your chickens live free drinks!<br>from 5-8 p.m. 5/20/19</a></li>
+</ul>
+<div class="flex-container-footer">
+  <footer>Contact us at by email: 1484203@park.edu<br>or call at: (913)255-5555</footer>
+</div>
+</body>
+</html>

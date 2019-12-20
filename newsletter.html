@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="flex.css">
+  <link rel="stylesheet" href="newsletter.css">
+  <style>
+    /*------------------------------------ 
+     this shows the 3 ways you can justifiy content in a flex container
+      flexbox container
+ 	1. flex-start - Default value. Items are positioned at the beginning of the container
+	2. flex-end - Items are positioned at the end of the container
+	3. center - Items are positioned at the center of the container
+	4. space-between - Items are positioned with space between the lines
+	5.  space-around - Items are positioned with space before, between, and after the lines
+   /*------------------------------------*/
+    @media all and (max-width: 600px) {
+      .flex-container {
+        width: 100%;
+        height: 85px;
+        align-content: space-between;
+        flex-direction: column;
+      }
+      .flex-container-picture {
+        width: 600px; 
+        align-content: space-between;
+      }
+      .flex-item{
+        width: 75px;
+        height: 100px;
+      }
+      }
+    @media all and (max-width: 500px) {
+        .flex-container {
+        width: 100%;
+        height: 85px;
+        align-content: space-between;
+        flex-direction: column;
+      }
+      .flex-container-picture {
+        width: 350px; 
+        height: 2000px;
+        flex-direction: row;
+        padding: 10px;
+      }
+      .flex-item{
+        width: 75px;
+        height: 100px;
+      }
+      .flex-item-picture {
+      padding: 10px;
+      width: 150px;
+      height: 350px;
+    }
+    .container_grid {
+    display: grid;
+    height: 100%;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    grid-template-rows: 80px 60px auto 60px 40px auto;
+     grid-template-areas: 
+        "l h h h h h"
+        "sh sh sh sh sh sh"
+        " c c c c p p"
+        "sh1 sh1 sh2 sh2 sh3 sh3"
+        "p1 p1 p2 p2 p3 p3"
+        "sc sc sc1 sc1 sc2 sc2";
+   color: var(--white);
+}
+.header {
+  size: 12px;
+}
+    
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item"><img src="./raising chicken.png" width="110" height="80"
+        alt="logo of Community Chicken Awareness."></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/index.html">Home</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/products.html">Products</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/events.html">Events</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/history.html">History</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/tutorial.html">Tutorials</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/awards.html">Awards</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/join.html">Join</a></div>
+    <div class="flex-item"><a href="#">Newsletter</a></div>
+  </div><br>
+  <div class="flex-container-word">
+    <h1>Community Chicken Awareness</h1><br>
+  </div><br>
+    <div class="container_grid">
+      <div class="logo"><img src="./raising chicken.png" width="110" height="80" alt="logo of Community Chicken Awareness."></div>
+      <div class="header"><h1>The Morning Rooster</h1></div>
+      <div class="storyheader"><h3>New President of the Community Chicken Awareness club</h3></div>
+      <div class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto eligendi ipsa reprehenderit quas animi voluptatum eos pariatur dolorum repellat labore, laborum unde nam! Saepe obcaecati quas dolorem debitis vero consectetur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias, illum rem, dolores ipsum dolorem commodi debitis accusantium adipisci voluptas veniam quia, aliquid eum labore. Ea dicta rem praesentium error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sit enim maxime voluptates nihil esse dolor ipsa, laborum a quisquam ducimus fugiat nobis, veniam repellendus aspernatur quae harum, porro placeat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi nemo odit eos consequatur. Quia impedit est provident esse veniam voluptatum perferendis, maiores facere assumenda. Molestias hic suscipit nihil quos nobis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa nulla nobis suscipit doloremque dicta, nostrum praesentium ipsam minima vitae ea tempore sint mollitia veritatis dolorem nihil quo, eos, dolores quidem.</div>
+      <div class="picture"><img src="./animal-bird-chicken-1537175 125.jpg" width="125" height="188"></div>
+      <div class="storyheader1">Chicken Feeding</div>
+      <div class="picture1"><img src="./animals-beaks-blur-754308(1) 40px.jpg" width="60" height="40"></div>
+      <div class="storyheader2">Little Chicks Just Born</div>
+      <div class="picture2"><img src="./animals-chicken-chicks-5143 40px.jpg" width="53" height="40"></div>
+      <div class="storyheader3">First Chicken Sighting of The Spring</div>
+      <div class="picture3"><img src="./chicken-677048_640 40px.jpg" width="60" height="40"></div>
+      <div class="storycontent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto eligendi ipsa reprehenderit quas animi voluptatum eos
+      pariatur dolorum repellat labore, laborum unde nam! Saepe obcaecati quas dolorem debitis vero consectetur! Lorem ipsum
+      dolor sit amet, consectetur adipisicing elit. Tempore molestias, illum rem, dolores ipsum dolorem commodi debitis
+      accusantium adipisci voluptas veniam quia, aliquid eum labore. Ea dicta rem praesentium error? Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Quaerat sit enim maxime voluptates nihil esse dolor ipsa, laborum a quisquam ducimus
+      fugiat nobis, veniam repellendus aspernatur quae harum, porro placeat. Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Nisi nemo odit eos consequatur. Quia impedit est provident esse veniam voluptatum perferendis, maiores
+      facere assumenda. Molestias hic suscipit nihil quos nobis? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      Culpa nulla nobis suscipit doloremque dicta, nostrum praesentium ipsam minima vitae ea tempore sint mollitia veritatis
+      dolorem nihil quo, eos, dolores quidem.</div>
+      <div class="storycontent1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto eligendi ipsa reprehenderit quas animi voluptatum eos
+      pariatur dolorum repellat labore, laborum unde nam! Saepe obcaecati quas dolorem debitis vero consectetur! Lorem ipsum
+      dolor sit amet, consectetur adipisicing elit. Tempore molestias, illum rem, dolores ipsum dolorem commodi debitis
+      accusantium adipisci voluptas veniam quia, aliquid eum labore. Ea dicta rem praesentium error? Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Quaerat sit enim maxime voluptates nihil esse dolor ipsa, laborum a quisquam ducimus
+      fugiat nobis, veniam repellendus aspernatur quae harum, porro placeat. Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Nisi nemo odit eos consequatur. Quia impedit est provident esse veniam voluptatum perferendis, maiores
+      facere assumenda. Molestias hic suscipit nihil quos nobis? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      Culpa nulla nobis suscipit doloremque dicta, nostrum praesentium ipsam minima vitae ea tempore sint mollitia veritatis
+      dolorem nihil quo, eos, dolores quidem.</div>
+      <div class="storycontent2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto eligendi ipsa reprehenderit quas animi voluptatum eos
+      pariatur dolorum repellat labore, laborum unde nam! Saepe obcaecati quas dolorem debitis vero consectetur! Lorem ipsum
+      dolor sit amet, consectetur adipisicing elit. Tempore molestias, illum rem, dolores ipsum dolorem commodi debitis
+      accusantium adipisci voluptas veniam quia, aliquid eum labore. Ea dicta rem praesentium error? Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Quaerat sit enim maxime voluptates nihil esse dolor ipsa, laborum a quisquam ducimus
+      fugiat nobis, veniam repellendus aspernatur quae harum, porro placeat. Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Nisi nemo odit eos consequatur. Quia impedit est provident esse veniam voluptatum perferendis, maiores
+      facere assumenda. Molestias hic suscipit nihil quos nobis? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      Culpa nulla nobis suscipit doloremque dicta, nostrum praesentium ipsam minima vitae ea tempore sint mollitia veritatis
+      dolorem nihil quo, eos, dolores quidem.</div>
+    </div>
+  <div class="flex-container-footer">
+  <footer>Contact us at by email: 1484203@park.edu<br>or call at: (913)255-5555</footer>
+  </div>
+</body>
+</html>

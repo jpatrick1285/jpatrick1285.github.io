@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="flex.css">
+  <style>
+    /*------------------------------------ 
+     this shows the 3 ways you can justifiy content in a flex container
+      flexbox container
+ 	1. flex-start - Default value. Items are positioned at the beginning of the container
+	2. flex-end - Items are positioned at the end of the container
+	3. center - Items are positioned at the center of the container
+	4. space-between - Items are positioned with space between the lines
+	5.  space-around - Items are positioned with space before, between, and after the lines
+   /*------------------------------------*/
+    @media all and (max-width: 600px) {
+      .flex-container {
+        width: 100%;
+        height: 85px;
+        align-content: space-between;
+        flex-direction: column;
+      }
+      .flex-container-picture {
+        width: 600px; 
+        align-content: space-between;
+      }
+      .flex-item{
+        width: 75px;
+        height: 100px;
+      }
+      }
+    @media all and (max-width: 500px) {
+        .flex-container {
+        width: 100%;
+        height: 85px;
+        align-content: space-between;
+        flex-direction: column;
+      }
+      .flex-container-picture {
+        width: 350px; 
+        height: 2000px;
+        flex-direction: row;
+        padding: 10px;
+      }
+      .flex-item{
+        width: 75px;
+        height: 100px;
+      }
+      .flex-item-picture {
+      padding: 10px;
+      width: 150px;
+      height: 350px;
+    }
+    
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="flex-item"><img src="./raising chicken.png" width="110" height="80"
+        alt="logo of Community Chicken Awareness."></div>
+    <div class="flex-item">Home</div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/products.html">Products</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/events.html">Events</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/history.html">History</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/tutorial.html">Tutorials</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/awards.html">Awards</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/join.html">Join</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/newsletter.html">Newsletter</a></div>
+  </div><br>
+  <div class="flex-container-word">
+    <h1>Community Chicken Awareness</h1><br>
+  </div><br>
+  <h2>Hello we are a club that just adores chickens! We go through ways to take care of chickens! Please join our club!</h2>
+  <div class="flex-container-picture">
+  <div class="flex-item-picture"><img src="./slide1.png" width="184" height="350" alt="young lady holding chicken"></div>
+  <div class="flex-item-picture"><img src="./slide2.png" width="184" height="350" alt="baby chicks"></div>
+  <div class="flex-item-picture"><img src="./slide3.png" width="184" height="350" alt="couple holding chicken"></div>
+  <div class="flex-item-picture"><img src="./slide4.png" width="184" height="350" alt="chicken"></div>
+  </div>
+  <div class="flex-container-footer">
+  <footer>Contact us at by email: 1484203@park.edu<br>or call at: (913)255-5555</footer>
+  </div>
+</body>
+</html>

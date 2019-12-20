@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="flex.css">
+  <style>
+    /*------------------------------------ 
+     this shows the 3 ways you can justifiy content in a flex container
+      flexbox container
+ 	1. flex-start - Default value. Items are positioned at the beginning of the container
+	2. flex-end - Items are positioned at the end of the container
+	3. center - Items are positioned at the center of the container
+	4. space-between - Items are positioned with space between the lines
+	5.  space-around - Items are positioned with space before, between, and after the lines
+   /*------------------------------------*/
+    @media all and (max-width: 600px) {
+      .flex-container {
+        width: 100%;
+        height: 85px;
+        align-content: space-between;
+      }
+      .flex-container-tutorial {
+        width: 600px; 
+        align-content: space-between;
+      }
+      .flex-item{
+        width: 50px;
+        height: 100px;
+      }
+       iframe{
+      height: 500px;
+      width: 100%;
+      } 
+
+    }
+
+    @media all and (max-width: 500px) {
+        .flex-container {
+        width: 100%;
+        height: 85px;
+        align-content: space-between;
+        flex-direction: column;
+      }
+      .flex-container-tutorial {
+        width: 350px; 
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      .flex-item{
+        width: 50px;
+        height: 100px;
+      }
+      .flex-item-tutorial {
+      height: 125px;
+      flex: 0 1 calc(23%-1em);
+    }
+    iframe{
+      height: 200px;
+      width: 150px;
+    }
+    
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="flex-item"><img src="./raising chicken.png" width="110" height="80"
+        alt="logo of Community Chicken Awareness."></div>
+    <div class="flex-item">Home</div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/products.html">Products</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/events.html">Events</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/history.html">History</a></div>
+    <div class="flex-item"><a href="#">Tutorials</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/awards.html">Awards</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/join.html">Join</a></div>
+  </div><br>
+  <div class="flex-container-word">
+    <h1>Community Chicken Awareness</h1><br>
+  </div><br>
+  <div class="flex-container-tutorial">
+    <div class="flex-item-tutorial"><a href="./21 tips for raising backyard chickens.pdf">21 tips for raising backyard chickens.pdf</a></div>
+    <div class="flex-item-tutorial"><a href="./Chicken.pdf">chikens.pdf</a></div>
+    <div class="flex-item-tutorial"><a href="./Chickens 101 a beginners guide to raising backyard chickens.pdf">Chickens 101 a beginners guide to raising backyard chickens.pdf</a></div>
+    <div class="flex-item-tutorial"><a href="./Home-Produced Chicken Eggs.pdf">Home-Produced Chicken Eggs.pdf</a></div>
+    <div class="flex-item-tutorial"><a href="./How to build a chicken coop for less than $50.pdf">How to build a chicken coop for less than $50.pdf</a></div>
+    <div class="flex-item-tutorial"><a href="./KC code of ordinances.pdf">KC code of ordinances.pdf</a></div>
+    </div>
+  <div class="flex-video"><iframe width="972" height="547" src="https://www.youtube.com/embed/rNY8iIV8zKk" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  <div class="flex-container-footer">
+  <footer>Contact us at by email: 1484203@park.edu<br>or call at: (913)255-5555</footer>
+  </div>   
+</body>
+</html>

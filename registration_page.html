@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="flex.css">
+  <link rel="stylesheet" href="registration.css">
+  <script src="registration.js"></script>
+  <style>
+    /*------------------------------------ 
+     this shows the 3 ways you can justifiy content in a flex container
+      flexbox container
+ 	1. flex-start - Default value. Items are positioned at the beginning of the container
+	2. flex-end - Items are positioned at the end of the container
+	3. center - Items are positioned at the center of the container
+	4. space-between - Items are positioned with space between the lines
+	5.  space-around - Items are positioned with space before, between, and after the lines
+   /*------------------------------------*/
+    @media all and (max-width: 600px) {
+      .flex-container {
+        width: 100%;
+        height: 50px;
+        align-content: space-between;
+      }
+      .flex-item{
+        width: 50px;
+        height: 100px;
+      }
+      }
+    @media all and (max-width: 500px) {
+        .flex-container {
+        width: 100%;
+        height: 85px;
+        align-content: space-between;
+        flex-direction: column;
+      }
+      .flex-item{
+        width: 50px;
+        height: 100px;
+      }
+    
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="flex-item"><img src="./raising chicken.png" width="110" height="80" alt="logo of tasty steak steakhouse.">
+    </div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/index.html">Home</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/products.html">Products</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/events.html">Events</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/history.html">History</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/tutorial.html">Tutorials</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/awards.html">Awards</a></div>
+    <div class="flex-item"><a href="http://teach.park.edu/~jpatrick/HW/HW314/final/join.html">Join</a></div>
+  </div><br>
+  <div class="flex-container-word">
+    <h1>Community Chicken Awareness</h1><br>
+  </div><br>
+<div id="content">
+
+  <form id="form1" action="welcome.html">
+
+    <div id="one">
+      what is you favorite breed of chicken?
+      <input type="text" id="q1">
+      <button type="button" id="submit" onclick="show_div('two'); return false;">next</button>
+    </div>
+    <div id="two">
+      have you ever or do you currently own a chicken?
+      <br>
+      <input type="text" id="q2">
+      <button type="button" id="submit" onclick="show_div('three'); return false;">next</button>
+    </div>
+    <div id="three">
+      what is the size of your backyard?
+      <input type="text" id="q3">
+      <button type="button" id="submit" onclick="show_div('four'); return false;">next</button>
+    </div>
+    <div id="four">
+      what is the purpose of keeping the chickens?
+      <input type="text" id="q4">
+      <button type="button" id="submit" onclick="show_div('five'); return false;">next</button>
+    </div>
+    <div id="five">
+      what kind of feed do you give your chicken?
+      <input type="text" id="q5">
+      <button type="button" id="submit" onclick="show_div('six'); return false;">next</button>
+    </div>
+    <div id="six">
+      press submit to enter results
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+<div class="flex-container-footer">
+  <footer>Contact us at by email: 1484203@park.edu<br>or call at: (913)255-5555</footer>
+</div>
+</body>
+</html>
